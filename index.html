@@ -1,270 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Demo</title>
-    <!-- Google font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- FontAwesome -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
-      crossorigin="anonymous"
-    />
-    <!-- Swiper CDN for the carousel -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <!-- CSS Stylesheets -->
-    <link rel="stylesheet" href="src/css/normalize.css" />
-    <link rel="stylesheet" href="src/css/style.css" />
-  </head>
-  <body>
-    <!-- Back to top icon -->
-    <a href="#nav"><i class="fas fa-angle-up"></i></a>
 
-    <!-- Header containing the navbar and the slider -->
-    <header>
-      <nav id="nav" class="nav">
-        <div class="menu">
-          <a href="#" class="logo-container">
-            <img src="src/img/LOGO.png" alt="espace rénovation logo" />
-          </a>
-          <!-- Burger icon for the mobile version menu -->
-          <button class="burger"><i class="fas fa-bars"></i></button>
-          <div class="desktop-menu uppercase">
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Réalisations</a></li>
-            <li><a href="#">Contact</a></li>
-          </div>
-        </div>
-        <!-- Dropdown menu for mobile version -->
-        <div class="menu-dropdown">
-          <ul class="menu-dropdown-links uppercase">
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Réalisations</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Demo</title>
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+  <!-- Swiper CDN for the carousel -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="src/css/normalize.css" />
+  <link rel="stylesheet" href="src/css/style.css" />
+</head>
 
-      <!-- Slider main container -->
-      <div id="slider" class="swiper-container">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide slide-appartment">
-            <h3 class="uppercase">
-              rénovation <br /><span class="highlight">d'appartement</span>
-            </h3>
-          </div>
-          <div class="swiper-slide slide-office">
-            <h3 class="uppercase">
-              rénovation <br /><span class="highlight">de bureau</span>
-            </h3>
-          </div>
-          <div class="swiper-slide slide-home">
-            <h3 class="uppercase">
-              rénovation <br /><span class="highlight">de maison</span>
-            </h3>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </header>
+<body>
+  <!-- Back to top icon -->
+  <a href="#nav"><i class="fas fa-angle-up"></i></a>
 
-    <!-- Services & company presentation -->
-    <section class="presentation-section text-center">
-      <!-- Company introduction -->
-      <h1 class="uppercase title-reveal hidden">Entreprise de renovation</h1>
-      <h2>
-        PEINTURE – PLOMBERIE – CHAUFFAGE – ÉLECTRICITÉ – MAÇONNERIE – PLÂTERIE –
-        CARRELAGE – MENUISERIE – PARQUET – AGENCEMENT – ÉTUDE ET RÉALISATION DE
-        PLANS
-      </h2>
-      <p>
-        <span class="bold-800"> L’entreprise Espace Rénovation</span> a été
-        créée en 2002, pour suivre et aider ses clients dans les projets
-        d’aménagement et de rénovation de l’habitat, de locaux commerciaux et de
-        bureaux. Que ce soit un simple dépannage, une rénovation complète ou
-        partielle, <span class="bold-800">Espace Rénovation</span> reste à votre
-        écoute. <span class="bold-800">Espace Rénovation</span> peut conseiller
-        des architectes décorateurs pour élaborer des plans et/ou orienter le
-        client vers des choix de matériaux, de couleurs et d’ameublement.
-        <span class="bold-800">Espace Rénovation</span> reste à votre
-        disposition quelque soit votre projet.
-      </p>
-      <!-- Services details -->
-      <div class="services">
-        <div class="services_estimates">
-          <figure><img src="src/img/sheet.png" alt="Icone devis" /></figure>
-          <h3 class="bold-700 uppercase">Devis gratuit</h3>
-          <p>
-            Un projet de rénovation complet ou partiel ?<br />
-            Quelque ce soit votre projet, nous sommes là pour le réaliser.
-            Demandez votre devis gratuit sur rendez-vous.
-          </p>
-        </div>
-        <div class="services_renovation">
-          <figure>
-            <img src="src/img/building.png" alt="Icone rénovation" />
-          </figure>
-          <h3 class="bold-700 uppercase">rénovation - aménagement</h3>
-          <p>
-            Pour la rénovation totale ou partielle de votre appartement, maison,
-            local commercial ou bureau. Nous sommes à votre écoute pour réaliser
-            ensemble votre projet du plus simple au plus fou !
-          </p>
-        </div>
-        <div class="services_advices">
-          <figure>
-            <img src="src/img/tools.png" alt="Icone conseils" />
-          </figure>
-          <h3 class="bold-700 uppercase">conseil deco plus</h3>
-          <p>
-            Nous vous mettons si vous le souhaitez en contact avec des
-            architectes décorateurs pour imaginer ensemble votre intérieur sur
-            plan, et/ou vous aider dans le choix des matériaux, des couleurs, de
-            la décoration et d’ameublement.
-          </p>
+  <!-- Header containing the navbar and the slider -->
+  <header>
+    <nav id="nav" class="nav">
+      <div class="menu">
+        <a href="#" class="logo-container">
+          <img src="src/img/LOGO.png" alt="espace rénovation logo" />
+        </a>
+        <!-- Burger icon for the mobile version menu -->
+        <button class="burger"><i class="fas fa-bars"></i></button>
+        <div class="desktop-menu uppercase">
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Réalisations</a></li>
+          <li><a href="#">Contact</a></li>
         </div>
       </div>
-      <a class="uppercase button" href="#">prendre rendez-vous</a>
-    </section>
+      <!-- Dropdown menu for mobile version -->
+      <div class="menu-dropdown">
+        <ul class="menu-dropdown-links uppercase">
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Réalisations</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
 
-    <!-- Projects presentation -->
-    <section class="projects-section text-center">
-      <h2 class="title-reveal hidden bold-800 uppercase">
-        Nos dernières réalisations
-      </h2>
-      <h3 class="uppercase">APPARTEMENTS – MAISONS – BUREAUX</h3>
-      <div class="project-grid">
-        <div class="project-grid__item uppercase">
-          <div class="project-img-container">
-            <img src="src/img/Réalisations1.jpg" alt="Photo projet 1" />
-          </div>
-          <h4>renovation espace coworking</h4>
-          <p>92310 sèvres</p>
+    <!-- Slider main container -->
+    <div id="slider" class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide slide-appartment">
+          <h3 class="uppercase">
+            rénovation <br /><span class="highlight">d'appartement</span>
+          </h3>
         </div>
-        <div class="project-grid__item uppercase">
-          <div class="project-img-container">
-            <img src="src/img/Réalisations2.jpg" alt="Photo projet 2" />
-          </div>
-          <h4>renovation d'une maison</h4>
-          <p>91750 chevannes</p>
+        <div class="swiper-slide slide-office">
+          <h3 class="uppercase">
+            rénovation <br /><span class="highlight">de bureau</span>
+          </h3>
         </div>
-        <div class="project-grid__item uppercase">
-          <div class="project-img-container">
-            <img src="src/img/Réalisations3.jpg" alt="Photo projet 3" />
-          </div>
-          <h4>renovation d'un appartement</h4>
-          <p>75017 paris</p>
-        </div>
-        <!-- </div> -->
-        <!-- <div class="second-row-desk"> -->
-        <div class="project-grid__item uppercase">
-          <div class="project-img-container">
-            <img src="src/img/Réalisations4.jpg" alt="Photo projet 4" />
-          </div>
-          <h4>renovation d'un appartement</h4>
-          <p>75009 paris</p>
-        </div>
-        <div class="project-grid__item uppercase">
-          <div class="project-img-container">
-            <img src="src/img/Réalisations5.jpg" alt="Photo projet 5" />
-          </div>
-          <h4>renovation d'un duplex</h4>
-          <p>92100 boulogne-billancourt</p>
-        </div>
-        <div class="project-grid__item uppercase">
-          <div class="project-img-container">
-            <img src="src/img/Réalisations6.jpg" alt="Photo projet 6" />
-          </div>
-          <h4>renovation d'un appartement</h4>
-          <p>92300 levallois-perret</p>
+        <div class="swiper-slide slide-home">
+          <h3 class="uppercase">
+            rénovation <br /><span class="highlight">de maison</span>
+          </h3>
         </div>
       </div>
-      <a class="uppercase button" href="#">voir + de projets</a>
-    </section>
+      <div class="swiper-pagination"></div>
+    </div>
+  </header>
 
-    <!-- Contacts section : email, phone and adress -->
-    <section class="contact-section text-center">
-      <h2 class="uppercase bold-700 title-reveal hidden">
-        RÉALISEZ VOTRE PROJET AVEC NOUS
-      </h2>
-      <p class="uppercase">nos coordonées</p>
-      <div class="contacts-container">
-        <div class="contacts_address">
-          <div class="contact-icon-container">
-            <img src="src/img/PictoBureaux.png" alt="Icone bureau" />
-          </div>
-          <h4 class="uppercase bold-700">à nos bureaux</h4>
-          <p>43 rue boursault <br />75017 Paris</p>
+  <!-- Services & company presentation -->
+  <section class="presentation-section text-center">
+    <!-- Company introduction -->
+    <h1 class="uppercase title-reveal hidden">Entreprise de renovation</h1>
+    <div class="presentation-section_services">
+
+      <ul><li>Peinture</li>
+        <li>Plomberie</li>
+        <li>Chauffage</li>
+        <li>Électricité</li>
+        <li>Maçonnerie</li>
+        <li>Plâtrerie</li>
+        <li>Carrelage</li>
+        <li>Menuiserie</li>
+        <li>Parquet</li>
+        <li>Agencement</li>
+        <li class="no-hyphen">Étude et
+          réalisation de plans</li></ul>
         </div>
-        <div class="contacts_coords">
-          <div class="contact-icon-container">
-            <img src="src/img/PictoMail.png" alt="Icone mail et téléphone" />
-          </div>
-          <h4 class="uppercase bold-700">par e-mail ou téléphone</h4>
-          <p>
-            01 40 05 94 10 <br />
-            06 80 98 66 93 <br />
-            info@espace-renovation.fr
-          </p>
+    <p>
+      <span class="bold-800"> L’entreprise Espace Rénovation</span> a été
+      créée en 2002, pour suivre et aider ses clients dans les projets
+      d’aménagement et de rénovation de l’habitat, de locaux commerciaux et de
+      bureaux. Que ce soit un simple dépannage, une rénovation complète ou
+      partielle, <span class="bold-800">Espace Rénovation</span> reste à votre
+      écoute. <span class="bold-800">Espace Rénovation</span> peut conseiller
+      des architectes décorateurs pour élaborer des plans et/ou orienter le
+      client vers des choix de matériaux, de couleurs et d’ameublement.
+      <span class="bold-800">Espace Rénovation</span> reste à votre
+      disposition quelque soit votre projet.
+    </p>
+    <!-- Services details -->
+    <div class="services">
+      <div class="services_estimates">
+        <figure><img src="src/img/sheet.png" alt="Icone devis" /></figure>
+        <h3 class="bold-700 uppercase">Devis gratuit</h3>
+        <p>
+          Un projet de rénovation complet ou partiel ?<br />
+          Quelque ce soit votre projet, nous sommes là pour le réaliser.
+          Demandez votre devis gratuit sur rendez-vous.
+        </p>
+      </div>
+      <div class="services_renovation">
+        <figure>
+          <img src="src/img/building.png" alt="Icone rénovation" />
+        </figure>
+        <h3 class="bold-700 uppercase">rénovation - aménagement</h3>
+        <p>
+          Pour la rénovation totale ou partielle de votre appartement, maison,
+          local commercial ou bureau. Nous sommes à votre écoute pour réaliser
+          ensemble votre projet du plus simple au plus fou !
+        </p>
+      </div>
+      <div class="services_advices">
+        <figure>
+          <img src="src/img/tools.png" alt="Icone conseils" />
+        </figure>
+        <h3 class="bold-700 uppercase">conseil deco plus</h3>
+        <p>
+          Nous vous mettons si vous le souhaitez en contact avec des
+          architectes décorateurs pour imaginer ensemble votre intérieur sur
+          plan, et/ou vous aider dans le choix des matériaux, des couleurs, de
+          la décoration et d’ameublement.
+        </p>
+      </div>
+    </div>
+    <a class="uppercase button" href="#">prendre rendez-vous</a>
+  </section>
+
+  <!-- Projects presentation -->
+  <section class="projects-section text-center">
+    <h2 class="title-reveal hidden bold-800 uppercase">
+      Nos dernières réalisations
+    </h2>
+    <h3 class="uppercase">APPARTEMENTS – MAISONS – BUREAUX</h3>
+    <div class="project-grid">
+      <div class="project-grid__item uppercase">
+        <div class="project-img-container">
+          <img src="src/img/Réalisations1.jpg" alt="Photo projet 1" />
         </div>
-        <div class="contacts_form">
-          <div class="contact-icon-container">
-            <img src="src/img/PictoForm.png" alt="Icone souris d'ordinateur" />
-          </div>
-          <h4 class="uppercase bold-700">par formulaire</h4>
-          <p>A remplir ici</p>
+        <h4>renovation espace coworking</h4>
+        <p>92310 sèvres</p>
+      </div>
+      <div class="project-grid__item uppercase">
+        <div class="project-img-container">
+          <img src="src/img/Réalisations2.jpg" alt="Photo projet 2" />
+        </div>
+        <h4>renovation d'une maison</h4>
+        <p>91750 chevannes</p>
+      </div>
+      <div class="project-grid__item uppercase">
+        <div class="project-img-container">
+          <img src="src/img/Réalisations3.jpg" alt="Photo projet 3" />
+        </div>
+        <h4>renovation d'un appartement</h4>
+        <p>75017 paris</p>
+      </div>
+      <!-- </div> -->
+      <!-- <div class="second-row-desk"> -->
+      <div class="project-grid__item uppercase">
+        <div class="project-img-container">
+          <img src="src/img/Réalisations4.jpg" alt="Photo projet 4" />
+        </div>
+        <h4>renovation d'un appartement</h4>
+        <p>75009 paris</p>
+      </div>
+      <div class="project-grid__item uppercase">
+        <div class="project-img-container">
+          <img src="src/img/Réalisations5.jpg" alt="Photo projet 5" />
+        </div>
+        <h4>renovation d'un duplex</h4>
+        <p>92100 boulogne-billancourt</p>
+      </div>
+      <div class="project-grid__item uppercase">
+        <div class="project-img-container">
+          <img src="src/img/Réalisations6.jpg" alt="Photo projet 6" />
+        </div>
+        <h4>renovation d'un appartement</h4>
+        <p>92300 levallois-perret</p>
+      </div>
+    </div>
+    <a class="uppercase button" href="#">voir + de projets</a>
+  </section>
+
+  <!-- Contacts section : email, phone and adress -->
+  <section class="contact-section text-center">
+    <h2 class="uppercase bold-700 title-reveal hidden">
+      RÉALISEZ VOTRE PROJET AVEC NOUS
+    </h2>
+    <p class="uppercase">nos coordonées</p>
+    <div class="contacts-container">
+      <div class="contacts_address">
+        <div class="contact-icon-container">
+          <img src="src/img/PictoBureaux.png" alt="Icone bureau" />
+        </div>
+        <h4 class="uppercase bold-700">à nos bureaux</h4>
+        <p>43 rue boursault <br />75017 Paris</p>
+      </div>
+      <div class="contacts_coords">
+        <div class="contact-icon-container">
+          <img src="src/img/PictoMail.png" alt="Icone mail et téléphone" />
+        </div>
+        <h4 class="uppercase bold-700">par e-mail ou téléphone</h4>
+        <p> 01 40 05 94 10</p>
+        <p> 06 80 98 66 93</p>
+        <p>info@espace-renovation.fr</p>
+      </div>
+      <div class="contacts_form">
+        <div class="contact-icon-container">
+          <img src="src/img/PictoForm.png" alt="Icone souris d'ordinateur" />
+        </div>
+        <h4 class="uppercase bold-700">par formulaire</h4>
+        <p>A remplir ici</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content text-center">
+      <div class="footer-logo">
+        <img src="src/img/LOGO.png" alt="Logo" />
+        <ul><li>Peinture</li>
+        <li>Plomberie</li>
+        <li>Chauffage</li>
+        <li>Électricité</li>
+        <li>Maçonnerie</li>
+        <li>Plâtrerie</li>
+        <li>Carrelage</li>
+        <li>Menuiserie</li>
+        <li>Parquet</li>
+        <li>Agencement</li>
+        <li class="no-hyphen">Étude et
+          réalisation de plans</li></ul>
+      </div>
+      <div class="footer-contact">
+        <p class="uppercase">CONTACTEZ-NOUS</p>
+        <div class="footer-contact_details">
+          <p>43 rue boursault</p>
+          <p>75017 Paris</p>
+          <p>01 40 05 94 10</p>
+          <p class="footer-email">info@espace-renovation.fr</p>
+          <a href="https://www.facebook.com/">
+            <i class="fab fa-facebook"></i></a><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
-    </section>
+    </div>
+    <p class="credits text-center">
+      © 2020
+      <a href="https://www.studio-creacom.fr/">studio-creacom.fr Charlène Tavares</a>
+      - <a href="#">Mentions légales</a>
+    </p>
+  </footer>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="src/js/app.js"></script>
+</body>
 
-    <footer>
-      <div class="footer-content text-center">
-        <div class="footer-logo">
-          <img src="src/img/LOGO.png" alt="Logo" />
-          <p>
-            Peinture – Plomberie – Chauffage – Électricité – Maçonnerie –
-            Plâtrerie – Carrelage – Menuiserie – Parquet – Agencement – Étude et
-            réalisation de plans
-          </p>
-        </div>
-        <div class="footer-contact">
-          <p class="uppercase">CONTACTEZ-NOUS</p>
-          <p>
-            43 rue boursault <br />
-            75017 Paris <br />
-            01 40 05 94 10 <br />
-            info@espace-renovation.fr <br />
-            <a href="https://www.facebook.com/">
-              <i class="fab fa-facebook"></i></a
-            ><a href="https://www.instagram.com"
-              ><i class="fab fa-instagram"></i
-            ></a>
-          </p>
-        </div>
-      </div>
-      <p class="credits text-center">
-        © 2020
-        <a href="https://www.studio-creacom.fr/"
-          >studio-creacom.fr Charlène Tavares</a
-        >
-        - <a href="#">Mentions légales</a>
-      </p>
-    </footer>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="src/js/app.js"></script>
-  </body>
 </html>

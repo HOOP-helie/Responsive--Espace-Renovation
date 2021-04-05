@@ -57,11 +57,11 @@ body {
   position: fixed;
   bottom: 2%;
   right: 3%;
-  transition: color 1s;
+  transition: color 0.5s;
 }
 .fa-angle-up:hover {
   color: #fff;
-  transition: color 1s;
+  transition: color 0.5s;
 }
 
 nav {
@@ -188,19 +188,24 @@ h3 .highlight {
 
 .presentation-section {
   width: 90%;
-  margin: 1rem auto;
+  margin: 2rem auto;
 }
 .presentation-section h1 {
   font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 1.2rem;
 }
-.presentation-section h2 {
-  font-weight: 400;
-  font-size: 1.2rem;
-  margin-bottom: 2.5rem;
-}
 
+.presentation-section_services ul {
+  margin: 0.5rem auto 3rem;
+}
+.presentation-section_services li {
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
 .presentation-section > p {
   font-size: 0.9rem;
   line-height: 1.6rem;
@@ -313,6 +318,9 @@ h3 .highlight {
   line-height: 1.5rem;
   margin-bottom: 1.8rem;
 }
+.contacts_coords p {
+  line-height: 0;
+}
 
 /* ====================================== */
 /* Footer section  */
@@ -324,7 +332,7 @@ footer {
 
 .footer-content {
   padding-top: 2rem;
-  width: 80%;
+  width: 90%;
   margin: 2rem auto 3rem;
 }
 .footer-logo img {
@@ -332,36 +340,51 @@ footer {
   margin-bottom: 1.5rem;
   max-width: 350px;
 }
-.footer-logo p {
-  font-size: 0.9rem;
+
+.footer-logo ul {
+  margin: 0.5rem auto 3rem;
+  max-width: 38rem;
+}
+.footer-logo li {
+  display: inline-block;
+  font-size: 0.95rem;
   font-weight: 300;
-  letter-spacing: 1.5;
-  line-height: 1.3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 0.5rem;
 }
 
-.footer-contact p:first-child {
+.footer-logo li:not(.no-hyphen)::after,
+.presentation-section_services li:not(.no-hyphen)::after {
+  content: ' – ';
+}
+
+.footer-contact > p:first-child {
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
 }
 
-.footer-contact p:nth-child(2) {
+.footer-contact_details p {
   font-size: 1.1rem;
-  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 0.3rem;
 }
 
 .footer-contact i {
   color: #fff;
   font-size: 1.6rem;
-  margin: 0.5rem auto;
+  margin: 0.6rem auto;
 }
 
 .footer-contact a + a {
   margin-left: 0.5rem;
 }
 
+.footer-email {
+  white-space: nowrap;
+}
+
 .credits,
 .credits a {
+  width: 80%;
   font-size: 0.9rem;
   line-height: 1.5;
   margin: 1rem auto 0;
@@ -377,7 +400,9 @@ footer {
   color: var(--secondary-color);
   transition: color 0.6s;
 }
-
+.footer-email {
+  white-space: nowrap;
+}
 /* ============================================================ */
 /* Medium to large sized screen - min : 768px*/
 @media (min-width: 48rem) {
@@ -415,12 +440,14 @@ footer {
     align-self: center;
   }
 
-  .footer-logo p {
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-    margin: 0 2rem;
+  .footer-logo ul {
+    margin: 0 0.2rem 0 2rem;
   }
 
+  .footer-logo li {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
   .footer-contact {
     width: 25%;
     border-left: 1px solid #fff;
@@ -477,10 +504,6 @@ footer {
   .desktop-menu li + li {
     border-left: 1px solid #fff;
   }
-  .swiper-slide img {
-    width: 130%;
-  }
-
   /*=============================================== */
   /* Section- Company and services presentation */
   .presentation-section {
@@ -488,10 +511,6 @@ footer {
   }
   .presentation-section h1 {
     font-size: 2rem;
-  }
-
-  .presentation-section h2 {
-    font-size: 1.3rem;
   }
 
   .presentation-section > p {
@@ -507,11 +526,7 @@ footer {
 
   /* ==================================== */
   /* Project section */
-  .first-row-desk,
-  .second-row-desk {
-    display: flex;
-    flex-wrap: nowrap;
-  }
+
   .project-grid__item {
     width: calc(33% - 5px);
   }
