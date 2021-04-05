@@ -1,0 +1,541 @@
+:root {
+  --primary-color: #183544;
+  --secondary-color: #edd154;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: var(--primary-color);
+}
+
+.text-center {
+  text-align: center;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.bold-800 {
+  font-weight: 800;
+}
+
+.bold-700 {
+  font-weight: 700;
+}
+
+.button {
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1em 2em;
+  transition: opacity 0.2s;
+}
+.button:hover {
+  opacity: 0.9;
+}
+
+/* ========================== */
+/* ========MOBILE FIRST ======*/
+/* ========================== */
+.fa-angle-up {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border: 1px solid #fff;
+  border-radius: 50%;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 2%;
+  right: 3%;
+  transition: color 1s;
+}
+.fa-angle-up:hover {
+  color: #fff;
+  transition: color 1s;
+}
+
+nav {
+  background-color: var(--primary-color);
+}
+
+.desktop-menu {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4vw;
+}
+
+.logo-container {
+  width: 60vw;
+  max-width: 250px;
+  transition: opacity 0.3s;
+}
+.logo-container img {
+  max-width: 100%;
+}
+.logo-container:hover {
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.burger {
+  font-size: 1.5rem;
+  color: white;
+  background-color: transparent;
+  border: none;
+}
+.burger-active {
+  color: var(--secondary-color);
+}
+
+.menu-dropdown {
+  background-color: var(--primary-color);
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+.menu-dropdown-links li {
+  border-bottom: 1px solid rgba(237, 209, 84, 0.7);
+  font-weight: 800;
+  letter-spacing: 2px;
+  padding: 1rem 2rem;
+}
+.menu-dropdown-links a {
+  color: var(--secondary-color);
+}
+
+/* Animation styling for menu dropdown */
+.menu-dropdown-links {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.8s ease-in-out;
+  top: 100%;
+}
+
+.menu-dropdown-links--active {
+  max-height: 380px;
+  transition: max-height 0.8s ease-in-out;
+}
+
+/* Slider */
+.swiper-container {
+  height: 31rem;
+  cursor: grab;
+}
+
+.swiper-slide {
+  position: relative;
+}
+.slide-appartment,
+.slide-home,
+.slide-office {
+  background-position: center;
+  background-size: cover;
+}
+.slide-appartment {
+  background-image: url('../img/PHOTO-APPARTEMENT.jpg');
+}
+.slide-home {
+  background-image: url('../img/PHOTO-MAISON.jpg');
+}
+.slide-office {
+  background-image: url('../img/PHOTO-BUEAU.jpg');
+}
+
+.swiper-slide h3 {
+  color: white;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  line-height: 1.2;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h3 .highlight {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background: var(--primary-color);
+}
+
+/* ====================================================== */
+/* Section - Company & Services presentation*/
+
+.presentation-section {
+  width: 90%;
+  margin: 1rem auto;
+}
+.presentation-section h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+.presentation-section h2 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.presentation-section > p {
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+  margin-bottom: 4rem;
+}
+
+.services {
+  width: 95%;
+  margin: 0 auto;
+}
+
+[class^='services_'] {
+  margin-bottom: 2rem;
+  transform: translateY(30%);
+  opacity: 0;
+}
+
+.services figure {
+  width: 25vw;
+  max-width: 120px;
+  margin: 4rem auto 0;
+}
+.services figure img {
+  max-width: 100%;
+}
+
+.services h3 {
+  margin: 1rem auto 1.2rem;
+}
+.services p {
+  line-height: 1.8rem;
+}
+
+.presentation-section a {
+  display: inline-block;
+  margin: 1rem auto;
+}
+
+/* ============================================ */
+/* Section- Projects presentation */
+.projects-section {
+  width: 95%;
+  margin: 2rem auto;
+}
+
+.projects-section h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.projects-section h3 {
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin-bottom: 2.5rem;
+}
+.projects-section h4 {
+  margin: 0.8rem auto;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.projects-section p {
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.project-img-container {
+  width: 100%;
+  height: 19rem;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.project-img-container img {
+  width: 100%;
+}
+
+.projects-section a {
+  display: inline-block;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.project-grid__item {
+  width: 100%;
+}
+
+/* ====================================== */
+/* Section - Contacts  */
+.contact-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.contacts-container {
+  margin-top: 3rem;
+}
+
+.contact-icon-container {
+  margin-bottom: 1rem;
+}
+
+.contacts-container h4 {
+  margin-bottom: 1.5rem;
+}
+.contacts-container p {
+  line-height: 1.5rem;
+  margin-bottom: 1.8rem;
+}
+
+/* ====================================== */
+/* Footer section  */
+
+footer {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.footer-content {
+  padding-top: 2rem;
+  width: 80%;
+  margin: 2rem auto 3rem;
+}
+.footer-logo img {
+  width: 60vw;
+  margin-bottom: 1.5rem;
+  max-width: 350px;
+}
+.footer-logo p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 1.5;
+  line-height: 1.3rem;
+  margin-bottom: 3rem;
+}
+
+.footer-contact p:first-child {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-contact p:nth-child(2) {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.footer-contact i {
+  color: #fff;
+  font-size: 1.6rem;
+  margin: 0.5rem auto;
+}
+
+.footer-contact a + a {
+  margin-left: 0.5rem;
+}
+
+.credits,
+.credits a {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 1rem auto 0;
+  padding-bottom: 1rem;
+}
+
+.credits a {
+  color: #fff;
+  transition: color 0.6s;
+}
+
+.credits a:hover {
+  color: var(--secondary-color);
+  transition: color 0.6s;
+}
+
+/* ============================================================ */
+/* Medium to large sized screen - min : 768px*/
+@media (min-width: 48rem) {
+  .swiper-slide h3 {
+    text-align: left;
+    font-size: 2.4rem;
+    top: 40%;
+    left: 25%;
+  }
+
+  .project-grid__item {
+    width: calc(50% - 5px);
+  }
+
+  .contacts-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 4rem auto;
+  }
+  .footer-content {
+    width: 90%;
+    display: flex;
+    max-width: 70rem;
+  }
+
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    width: 75%;
+  }
+  .footer-logo img {
+    width: 26vw;
+    max-width: 320px;
+    align-self: center;
+  }
+
+  .footer-logo p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin: 0 2rem;
+  }
+
+  .footer-contact {
+    width: 25%;
+    border-left: 1px solid #fff;
+    padding: 1rem 1rem 0.2rem;
+  }
+
+  .footer-contact,
+  .footer-logo {
+    text-align: left;
+  }
+
+  .credits,
+  .credits a {
+    font-size: 1.1rem;
+  }
+}
+
+/* ============================================================ */
+/*Large-sized screen - min : 944px*/
+@media (min-width: 59rem) {
+  .presentation-section,
+  .projects-section,
+  .contact-section,
+  .footer-content {
+    width: 95%;
+    max-width: 70rem; /*1120px*/
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .burger {
+    display: none;
+  }
+  .menu {
+    max-width: 75rem; /*1200px*/
+    margin: 0 auto;
+    padding: 1.5rem 4vw;
+  }
+  .desktop-menu {
+    display: flex;
+  }
+  .desktop-menu a {
+    color: #fff;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    transition: color 0.4s;
+  }
+  .desktop-menu a:hover {
+    color: var(--secondary-color);
+    transition: color 0.3s;
+  }
+
+  .desktop-menu li + li {
+    border-left: 1px solid #fff;
+  }
+  .swiper-slide img {
+    width: 130%;
+  }
+
+  /*=============================================== */
+  /* Section- Company and services presentation */
+  .presentation-section {
+    margin: 3rem auto;
+  }
+  .presentation-section h1 {
+    font-size: 2rem;
+  }
+
+  .presentation-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .presentation-section > p {
+    font-size: 1rem;
+  }
+  .services {
+    display: flex;
+    justify-content: space-between;
+  }
+  .services > div {
+    width: 31%;
+  }
+
+  /* ==================================== */
+  /* Project section */
+  .first-row-desk,
+  .second-row-desk {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .project-grid__item {
+    width: calc(33% - 5px);
+  }
+
+  .projects-section a {
+    margin-bottom: 3rem;
+  }
+}
+/* ==================================== */
+/*============Animation ================*/
+/* ==================================== */
+
+.hidden {
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+
+.reveal {
+  opacity: 1;
+  transition: opacity 0.6s;
+}
+
+.slide-up {
+  transform: translateY(0);
+  opacity: 1;
+  transition: opacity 1s, transform 1s;
+}
